@@ -1,11 +1,18 @@
 .banner-content {
-  background-image:  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://picsum.photos/1000/500');
+  background-image:  linear-gradient(rgba(221,94,137, 0.3), rgba(256,256,256,0.2)), url('home-banner.jpg');
   background-size: cover;
-  height: Calc(100vh - 70px);
+  height: 100vh;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
+  font-weight: 800;
   flex-direction: column;
+  h2{
+    font-size: 50px;
+  }
+  p{
+    font-size: 30px;
+  }
 }

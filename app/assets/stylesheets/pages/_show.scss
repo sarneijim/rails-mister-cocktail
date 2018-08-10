@@ -1,0 +1,38 @@
+.show-img{
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 34.37% 0 0 0;
+  img{
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    /* max-height: 100%; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+.show-buttons{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.show-ingredients{
+  text-align: center;
+  color: black;
+  padding: 35px;
+}
+.fa-times{
+  color: #a52929;
+  float: right;
+  font-size: 25px;
+  &:hover{
+    text-decoration: none;
+    color: #f44336;
+  }
+}
