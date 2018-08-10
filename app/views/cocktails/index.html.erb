@@ -2,10 +2,10 @@
 <div class="container">
   <ul class = "home-listado">
     <div class="row">
-      <% @cocktails.each do |cocktail| %>
+      <% @cocktails.each do |cocktail, id| %>
         <div class="col col-sm-6 col-md-3">
-          <li style="background-image: linear-gradient(rgba(221, 94, 137, 0.3), rgba(255, 255, 255, 0.2)),
-         url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>')">
+          <li style="background-image: linear-gradient(rgba(221, 94, 137, 0.3), rgba(255, 255, 255, 0.2)), url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>')">
+
             <%= link_to cocktail[:name], cocktail_path(cocktail), class: "button"%>
           </li>
         </div>
