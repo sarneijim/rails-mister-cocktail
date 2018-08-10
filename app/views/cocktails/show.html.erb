@@ -3,6 +3,7 @@
 
 
 <% @cocktail.doses.each do |dose| %>
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
   <p><%= dose.description %><%= dose.ingredient %></p>
 <% end %>
 <%= link_to "Back to the list", cocktails_path  %>
