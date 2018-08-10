@@ -1,0 +1,20 @@
+<%= render 'banner' %>
+<div class="container">
+  <ul class = "home-listado">
+    <div class="row">
+      <% @cocktails.each do |cocktail, id| %>
+        <div class="col col-sm-6 col-md-3">
+          <li>
+              <%= link_to cocktail[:name], cocktail_path(cocktail)%>
+
+          </li>
+        </div>
+      <% end %>
+    </div>
+  </ul>
+</div>
+
+
+
+
+

@@ -1,0 +1,17 @@
+<h2>My Doses</h2>
+
+<ul>
+  <% @doses.each do |dose, id| %>
+    <li>
+        <%= link_to dose[:description], dose_path(dose)%>
+        <%= link_to "", dose_path(dose),
+      method: :delete,
+      data: { confirm: "Are you sure?" }, class:"fa fa-trash"   %><br>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "Add a new dose", new_dose_path%><br>
+
+
+
+
